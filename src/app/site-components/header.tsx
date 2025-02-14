@@ -29,6 +29,7 @@ import {
 import { useDisclosure } from "@mantine/hooks";
 import { MantineLogo } from "@mantinex/mantine-logo";
 import classes from "./HeaderMegaMenu.module.css";
+import Image from "next/image";
 
 const mockdata = [
   {
@@ -91,7 +92,8 @@ export function HeaderMegaMenu() {
     <Box pb={120}>
       <header className={classes.header}>
         <Group justify="space-between" h="100%">
-          <MantineLogo size={30} />
+          {/* <MantineLogo size={30} /> */}
+          <Image src="/logo-org.png" alt="logo" width={140} height={50} />
 
           <Group h="100%" gap={0} visibleFrom="sm">
             <a href="#" className={classes.link}>
